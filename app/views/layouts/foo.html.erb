@@ -1,0 +1,1045 @@
+<%
+    new_films = [
+      {
+        img: 'https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29375/SeriousPeople_Poster.jpg',
+        title: 'SERIOUS PEOPLE',
+        desc: 'A successful director pushes his work/life balance to the extreme when he hires a doppelgänger to work in his stead. From Tribeca Films.',
+        director: '',
+        cast: 'Pasqual Gutierrez, Christine Yuan, RJ Sanchez, Miguel Huerta, Jenn Brown, Spencer Creigh, Mishka Kornai, Pasqual Gutierrez Sr., Parker McMillan, Kelsey Laroche, Myn Mei, Jeison Perez',
+        trailer: 'https://www.youtube.com/watch?v=EAF_FqqvyYU',
+        links_title: 'Pre-order now',
+        links: [
+          ['Apple TV', 'https://tv.apple.com/us/movie/serious-people/umc.cmc.6qwhxssf03nzfdwnc1awzp639'],
+          ['Fandango at Home', 'https://athome.fandango.com/content/browse/details/Serious-People/4672448'],
+          ['Amazon', 'https://www.amazon.com/Serious-People-Pasqual-Gutierrez/dp/B0FVHD3QFG/ref=sr_1_5?crid=2VR7RB8HJV7NN&dib=eyJ2IjoiMSJ9.AgrZPkpKJHW7zO3lQTYuhStr1ab-zQXy1NwxYjyx3qB10xRvctOhfdfc0RwcBUEPTybz6ytHNJmfybT44Dtu_qUVuAk1Fj8JAzsxy9_ciO4Di3kwPguolYX6WD_PC5-FgfnIhgSkCwJp45_4qTqrXlMKEoLsvC5KERzqKzfx4_GNczWnQs8CTBc0_NxPi83vjOrgIpLRjYjt9p7ry_QNnJ4_j4F_IptoLk8BD4Y2x6o.r3tSQE74JKdmbV60sNHCqzcPlDhIXoOadrX_AtmxpPg&dib_tag=se&keywords=serious+people&qid=1762897248&sprefix=serious+peopl%2Caps%2C168&sr=8-5'],
+        ]
+      },
+      {
+        img: 'https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29341/BEYOND-THE-GAZE-LOW-RES-JPG.jpg',
+        title: 'Beyond the Gaze: Jule Campbell’s Swimsuit Issue',
+        desc: 'Jule Campbell navigates a sexist workplace while confronting accusations of objectification during her 32-year tenure as founding editor of the Sports Illustrated Swimsuit Issue. Unyielding in her pursuit of artistic excellence, Campbell fortuitously launches mogul models and a mega-franchise. At 95, Campbell reflects on her legacy and impending mortality with the grace and intuition that guided her career, presenting a fair and balanced portrait of a complex and fascinating woman and her controversial career.',
+        director: '<strong>Director</strong>: Jill Campbell',
+        cast: 'Jule Campbell, Tyra Banks, Elle Macpherson, Cheryl Tiegs, Christie Brinkley, Jill Campbell, Bruce Campbell, Hannah Campbell, Carol Alt, Kim Alexis, Asley Richardson, Kathy Ireland, Roshumba Williams, Stacey Williams, MJ Day, Natalie Mariduena, Paulina Porizkova, Walter Iooss Jr.',
+        trailer: 'https://youtu.be/94MoDuxJXlU',
+        links_title: 'Watch Now on',
+        links: [
+          ['Amazon', 'https://www.amazon.com/gp/video/detail/B0FRXV17P9/ref=atv_sr_fle_c_Tn74RA_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B0FRXX1CMF&qid=1760583767477'],
+          ['Apple TV', 'https://tv.apple.com/us/movie/beyond-the-gaze-jule-campbells-swimsuit-issue/umc.cmc.25vftufvr49g3om9awhh2o4ad'],
+          ['Fandango at Home', 'https://athome.fandango.com/content/browse/details/Beyond-the-Gaze-Jule-Campbells-Swimsuit-Issue/4594119?cmp=rt_leaderboard'],
+        ]
+      }
+    ]
+
+    previous_films = [
+      {
+        img: 'https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29340/Tendaberry_Theatrical_KeyArt_27x40.jpg',
+        title: 'Tendaberry ',
+        desc: 'As her boyfriend returns to Ukraine to care for his ailing father, 23-year-old Dakota faces the challenges of a precarious new reality, navigating the complexities of survival in New York City on her own.',
+        director: '<strong>Director & Writer</strong>: Haley Elizabeth Anderson',
+        cast: 'Sarae Adams, Janice Dias, Mike Donovan',
+        trailer: 'https://youtu.be/cIK8ydOiPd4?si=J26mxgeX7_Z9jnLg',
+        links_title: 'Watch Now on',
+        links: [
+          ['Amazon', 'https://www.amazon.com/Tendaberry-Omu-Haley-Elizabeth-Anderson/dp/B0DLHBH9Z3'],
+          ['Apple TV', 'https://tv.apple.com/us/movie/tendaberry/umc.cmc.2sakil0b4kgqj34dd78i5f23i'],
+          ['Fandango at Home', 'https://athome.fandango.com/content/browse/details/Tendaberry/4006778'],
+          ['Kanopy', 'https://www.kanopy.com/en/product/15287945'],
+          ['Mubi', 'https://mubi.com/en/us/films/tendaberry']
+        ],
+      },
+    ]
+%>
+<main class="-my-10">
+  <nav class="bg-triblack text-white flex">
+    <!--<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28335/TribecaFilms_LogoWhite-156x80.png" alt="">-->
+    <div class="flex items-center justify-around w-full">
+      <span class="hidden md:block">
+        <h3 class="py-8">Tribeca Films</h3>
+      </span>
+    </div>
+  </nav>
+  <section class="grid md:grid-cols-2 bg-[#F1F0EE]">
+    <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/27635/TribecaFilms_Announce_16x9.png" alt="" class="" >
+    <div class="p-4 md:p-12">
+      <p class="mb-6 text-sm">
+        Tribeca Films is a distribution label that brings independent films from top festivals to streaming platforms and creates revenue-generating opportunities for filmmakers. Embracing our New York spirit, Tribeca Films showcases these films to new audiences across a wide distribution infrastructure and on the Tribeca Channel. Presented by Tribeca Enterprises in partnership with Giant Pictures.
+      </p>
+      <p class="mb-6 text-sm">For more information email us at the link below</p>
+      <div>
+        <a class="btn btn-primary" data-id="89441" href="mailto:distribution@tribecafilm.com" style="color: #151515; background-color: #FBFCF8;">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#FBFCF8] text-triblack py-8">
+    <div class="container-content">
+      <div class="text-center">
+        <h3 class="mb-1">New Releases</h3>
+      </div>
+    </div>
+  </section>
+  <div class="grid lg:grid-cols-4 gap-12 bg-triblack px-8 py-8">
+    <% new_films.each do |film| %>
+      <!-- Films -->
+      <div class="">
+        <img src="<%= film[:img] %>" alt="<%= film[:title] %>" />
+        <!-- the buttons NO youTube embed -->
+        <div class="flex flex-row justify-center gap-8">
+          <div class="text-center text-triwhite text-xs pt-4">
+            <button onclick="document.getElementById('<%= film[:title].parameterize %>').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+              About the Film
+            </button>
+          </div>
+          <dialog id="<%= film[:title].parameterize %>" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+            <h4 class="mb-4"><%= film[:title] %></h4>
+            <p class="mb-4 text-xs"><%= film[:desc] %></p>
+            <p class="mb-4 text-xs"><%= film[:director].html_safe %></p>
+            <% if film[:cast].present? %>
+              <p class="mb-4 text-xs"><strong>Cast</strong>: <%= film[:cast] %></p>
+            <% end %>
+            <div class="text-triwhite text-xs mb-4"><%= film[:links_title] %> <br/>
+              <% film[:links].each_with_index do |link, i| %>
+                <a href="<%= link.second %>" target="_blank" style="text-decoration: underline;"><%= link.first %></a>
+              <% end %>
+              <br/>
+              <button onclick="document.getElementById('<%= film[:title].parameterize %>').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+            <% if film[:trailer].present? %>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <a class="btn btn-primary" href="<%= film[:trailer] %>" target="_blank" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </a>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+      <!-- Sunfish -->
+      <div class="">
+        <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29331/Sunfish_KeyArt_18_2x3.jpg" alt="Sunfish" />
+        <!-- the buttons NO youTube embed -->
+        <div class="flex flex-row justify-center gap-8">
+          <div class="text-center text-triwhite text-xs pt-4">
+            <button onclick="document.getElementById('sunfish').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+              About the Film
+            </button>
+          </div>
+          <dialog id="sunfish" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+            <h4 class="mb-4">Sunfish (& Other Stories on Green Lake)</h4>
+            <p class="mb-4 text-xs">As a single summer unfolds around Green Lake, the lives of its residents and visitors intertwine. A girl learns to sail, a boy battles for first chair at a prestigious arts camp, a fisherman and a young mother are an odd pair in pursuit of adventure and the perfect catch, and two sisters savor their final days running a bed-and-breakfast before college pulls them apart.</p>
+            <p class="mb-4 text-xs"><strong>Director</strong>: Sierra Falconer</p>
+            <p class="mb-4 text-xs"><strong>Cast</strong>:
+              Maren Heary, Jim Kaplan, Karsen Liotta, Dominic Bogart, Emily Hall, Tenley Kellogg
+            </p>
+            <div class="text-triwhite text-xs mb-4">Watch Now on <br/>
+              <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.52912901-498f-4f58-99f6-b94093b30174?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+              <a href="https://tv.apple.com/us/movie/sunfish/umc.cmc.3ve1i7n5mwshogifl96lxmlw7" target="_blank" style="text-decoration: underline;">Apple TV</a>
+              <a href="https://athome.fandango.com/content/browse/details/Sunfish-Other-Stories-on-Green-Lake/4594116?cmp=OrganicSearch~Vudu~GoogleWatch" target="_blank" style="text-decoration: underline;  color: #fcfbf8;">Fandango at Home</a>
+              <!-- <div class="mb-4"> -->
+              <!--   <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png"> -->
+              <!-- </div> -->
+              <br/>
+              <button onclick="document.getElementById('sunfish').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+            <div class="text-center text-triwhite text-xs pt-4">
+              <a class="btn btn-primary" href="https://youtu.be/TALaJ_n_lyU" target="_blank" style="color: #151515; background-color: #FBFCF8;">
+                Watch Trailer
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- If That Mockingbird Don't Sing -->
+        <div class="">
+          <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29298/ITMDS_Vertical_NoBilling.jpg" alt="If That Mockingbird Don't Sing" />
+          <!-- the buttons NO youTube embed -->
+          <div class="flex flex-row justify-center gap-8">
+            <div class="text-center text-triwhite text-xs pt-4">
+              <button onclick="document.getElementById('mockingbird').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                About the Film
+              </button>
+            </div>
+            <dialog id="mockingbird" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+              <h4 class="mb-4">If That Mockingbird Don't Sing</h4>
+              <p class="mb-4 text-xs">After being brutally dumped, 17-year-old Sydnie discovers she's pregnant. Seeing this as an opportunity to get her ex back and give her life direction, she decides to keep the baby. She soon realizes this won't be the quick fix she had hoped for and finds herself caught in a complicated love triangle. From Tribeca Films.</p>
+              <p class="mb-4 text-xs"><strong>Director</strong>: Sadie Bones</p>
+              <p class="mb-4 text-xs"><strong>Cast</strong>: Aitana Doyle, Braxton Fannin, David Krumholtz , Nadia Dajani, Ava Bodnar, Andrew Michael Fama, Catherine Curtin, Kevin Corrigan,Galadriel Stineman, Natalie Carter, Suzanne Didonna, Stuart Rudin, Michael Buscemi</p>
+              <div class="text-triwhite text-xs mb-4">Watch Now on
+                <a href="https://www.amazon.com/gp/video/detail/B0FKZRQH3C?signInRedirect=1&ref_=atv_auth_red_aft" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                <a href="https://tv.apple.com/us/movie/if-that-mockingbird-dont-sing/umc.cmc.6yg5896wqx4qfm6r0svrcap9y" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                <a href="https://athome.fandango.com/content/browse/details/If-That-Mockingbird-Don-t-Sing/4513685" target="_blank" style="text-decoration: underline;  color: #fcfbf8;">Fandango at Home</a>
+                <!-- <div class="mb-4"> -->
+                <!--   <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png"> -->
+                <!-- </div> -->
+                <button onclick="document.getElementById('mockingbird').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/B0FKZRQH3C/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- A Bronx Tale: One Man Show -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28581/BronxTaleOneManShow-1080x1620.jpg" alt="A Bronx Tale: One Man Show" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutBronxTale').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutBronxTale" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">A Bronx Tale: One Man Show</h4>
+                <p class="mb-4 text-xs">Chazz Palminteri brings his acclaimed stage show that inspired the beloved film 'A Bronx Tale' to the screen for the first time. In ‘A Bronx Tale: One Man Show’ – an autobiographical account of the actor’s childhood in the Bronx in the 1960s – Palminteri tells the story of a young boy named Calogero who witnesses a murder and is taken under the wing of a local mob boss.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Chazz Palminteri</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Chazz Palminteri</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.primevideo.com/detail/A-Bronx-Tale-One-Man-Show/0HIN67P4Q36XH57OVONXQ98J8J" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/a-bronx-tale-one-man-show/umc.cmc.2m0hczlz6ktayfyc6hk132udx" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://athome.fandango.com/content/browse/details/A-Bronx-Tale-One-Man-Show/3819679" target="_blank" style="text-decoration: underline;">Fandango at Home</a>
+                  <a href="https://play.google.com/store/movies/details/A_Bronx_Tale_One_Man_Show?id=3CsDWJCqBrE.P&hl=en" target="_blank" style="text-decoration: underline;">Google Play</a>
+                </div>
+                <!--<div class="mb-4">
+						<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+					</div>-->
+                <button onclick="document.getElementById('aboutBronxTale').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.primevideo.com/detail/0HIN67P4Q36XH57OVONXQ98J8J/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- One Night With Adela -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29263/OneNightWithAdela-1080x1620.jpg" alt="One Night With Adela" />
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutAdela').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutAdela" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">One Night With Adela</h4>
+                <p class="mb-4 text-xs">Adela is a disturbed street sweeper in Madrid working the night shift. Tonight, she’ll take revenge on those who destroyed her life. A cocktail of drugs, sex, and deep-seated fury fuels her cruelty towards most who cross her path.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Hugo Ruíz</p>
+                <!--<p class="mb-4 text-xs"><strong>Cast</strong>: </p>-->
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.primevideo.com/-/pt_PT/detail/One-Night-with-Adela/0RJMVYC1SFNQTDQX4QQMA0O5GX" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                  <a href="https://tv.apple.com/es/movie/one-night-with-adela/umc.cmc.7drnl8dyqnbndpunh4p3ejj0m?l=en" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                  <a href="https://athome.fandango.com/content/browse/details/One-Night-With-Adela/4412916?cmp=OrganicSearch~Vudu~GoogleWatch" target="_blank" style="text-decoration: underline;  color: #fcfbf8;">Fandango at Home</a>
+                  <a href="https://play.google.com/store/movies/details?id=HiXHwDUcjrU.P&pli=1" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a>
+                </div>
+                <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+                <button onclick="document.getElementById('aboutAdela').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('AdelaTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="AdelaTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tNgdHdKaIWk?si=W8JfVxA7TQkeX6Ip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('AdelaTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+            </div>
+          </div>
+          <!-- Britto Doc -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29207/BrittoDoc-1080x1620.jpg" alt="The Britto Doc" />
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutBritto').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutBritto" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">The Britto Doc</h4>
+                <p class="mb-4 text-xs">His art adorns products, galleries and collector's walls worldwide, yet who is the man behind the name? Meet Romero Britto - the painter who rose from Brazil's favelas to become a global sensation. Alongside a star-studded cast, discover the extraordinary story of a man who transformed pain into a colorful empire that today brings happiness to millions.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Patrick Moreau</p>
+                <!--<p class="mb-4 text-xs"><strong>Cast</strong>: </p>-->
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.amazon.com/gp/video/detail/B0FHBRYPLX/ref=atv_dp_share_cu_r" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                  <a href="https://tv.apple.com/us/movie/the-britto-doc/umc.cmc.6mwf3qjy3q2l5nlyi1sfruqpz" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                  <a href="https://athome.fandango.com/content/browse/details/The-Britto-Doc/4329135" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                  <a href="https://play.google.com/store/movies/details/The_Britto_Doc?id=MrG0x-HiEvo.P" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a>
+                </div>
+                <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+                <button onclick="document.getElementById('aboutBritto').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('BrittoTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="BrittoTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Rgt1na-rDIQ?si=rOGW0CD1OGous0QC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('BrittoTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+            </div>
+          </div>
+          <!-- the Premiere -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29208/TF-ThePremiere_1080x1620.jpg" alt="The Premiere" />
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutPremiere').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutPremiere" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">The Premiere</h4>
+                <p class="mb-4 text-xs">Sam, a painfully narcissistic producer, attempts to make a musical version of his favorite movie, SCREAM, at a theater in The Hamptons, with an accompanying documentary chronicling the highs and lows. Along the way, he clashes with a cast of quirky characters, that lead to outrageous results in this mockumentary about a documentary about making a musical about a movie.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Sam Pezzullo</p>
+                <!--<p class="mb-4 text-xs"><strong>Cast</strong>: </p>-->
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.amazon.com/Premiere-Sam-Pezzullo/dp/B0DJBQ1Y7T/ref=sr_1_1?crid=1R6GTFQO0625C&dib=eyJ2IjoiMSJ9.yn79Q-RH-ipgqpW7UDmd3Ounjklf6nW5gsPhR9JhEKZYV1mI9ITA76LLFs9u54H7RBDLdkQMKjLLB2yyxVO4fjZPnRXO0GqNBH6M-DTyQUmWkbLNwNwYPxOvr1H-5VkVPl1Ib-iewZKzcol1bC6xD-sAiWt5whTU9w3bfnXpVaqM0vL8AV29y0s6BFEggCMOQA7A2kXMplWEISJIku4BznUaaWBsbZ0u67XoWGNEjQE.PIHlSFchACo25LMxXZEWVAvC76Q0A63oW74nYozfkfc&dib_tag=se&keywords=the+premier&qid=1754423927&s=instant-video&sprefix=the+premier%2Cinstant-video%2C102&sr=1-1" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                  <a href="https://tv.apple.com/us/movie/the-premiere/umc.cmc.5vl1julgh7gt2nno9imh19wam" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                  <a href="https://athome.fandango.com/content/browse/details/The-Premiere/4329132" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                </div>
+                <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+                <button onclick="document.getElementById('aboutPremiere').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('PremiereTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="PremiereTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d3lLDWFCHQY?si=0N0iO8BA73-luEw1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('PremiereTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+            </div>
+          </div>
+          <!-- Born Hungry -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28582/BornHungry_Poster-revised-040925.jpg" alt="Born Hungry" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutBornHungry').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutBornHungry" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Born Hungry</h4>
+                <p class="mb-4 text-xs">In this inspiring story of grit and determination, a runaway child from the streets of India is adopted by a family and becomes one of the top chefs in the world.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Barry Avrich</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Shipra Khanna, Mark McEwan, Sash Simpson, Thomas Zacharias</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/born-hungry/umc.cmc.1a5lx01nxq599aazyl1gm45ms" target="_blank" style="text-decoration: underline">Apple TV</a>
+                  <a href="https://www.amazon.com/Born-Hungry-Barry-Avrich/dp/B0DX22443K" target="_blank" style="text-decoration: underline">Amazon</a>
+                  <a href="https://play.google.com/store/movies/details/Born_Hungry?id=tySpJWyRy3Y.P&hl=en_US" target="_blank" style="text-decoration: underline">Google Play</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Born-Hungry/4047248" target="_blank" style="text-decoration: underline">Fandango at Home</a>
+                </div>
+                <!--<div class="mb-4">
+					<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+				</div>-->
+                <button onclick="document.getElementById('aboutBornHungry').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('bornHungryTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="bornHungryTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eByzQPa4x2Y?si=2x5TgvdphXQ4ETZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('bornHungryTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+            </div>
+          </div>
+          <!-- Egghead &amp; Twinkie -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28583/EggheadTwinkie-1080x1620.jpg" alt="Egghead & Twinkie" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutEgghead').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutEgghead" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Egghead &amp; Twinkie</h4>
+                <p class="mb-4 text-xs">After coming out to her parents, an Asian American teenage girl takes off on a road trip to meet her online crush with the help of her nerdy best friend.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Sarah Kambe Holland</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Sabrina Jieafa, Bryson JonSteele, Louis Tomeo</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/egghead--twinkie/umc.cmc.ohf3rscekro7x0pvwowuy4zd" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://www.amazon.com/Egghead-Twinkie-Sarah-Kambe-Holland/dp/B0DQYSTN48" target="_blank" style="text-decoration: underline;">Amazon</a>
+                  <a href="https://play.google.com/store/movies/details/Egghead_Twinkie?id=RXTDw695-Z4.P&hl=en_US" target="_blank" style="text-decoration: underline;">Google Play</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Egghead-Twinkie/4047258" target="_blank" style="text-decoration: underline;">Fandango at Home</a></div>
+                <!--<div class="mb-4">
+					<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+				</div>-->
+                <button onclick="document.getElementById('aboutEgghead').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=01qLI78TbnQ&ab_channel=Egghead%26Twinkie" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Featherweight -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28584/Featherweight-1080x1620.jpg" alt="Featherweight" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutFeatherweight').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutFeatherweight" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">The Featherweight</h4>
+                <p class="mb-4 text-xs">Set in 1964, a camera crew follows Willie Pep, retired featherweight boxing champion. Down and out in Hartford CT, married to a woman half his age and with a drug-addled son and mounting debts, Pep decides to make a return to the ring.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Robert Kolodny</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: James Madio, Ruby Wolf, Keir Gilchrist</p>
+                <div class="text-triwhite text-xs mb-4"><strong>Watch Now
+                    <a href="https://www.amazon.com/Featherweight-Robert-Kolodny/dp/B0DX22M3X6/" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                    <a href="https://athome.fandango.com/content/browse/details/The-Featherweight/4123631" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                    <a href="https://tv.apple.com/us/movie/the-featherweight/umc.cmc.1yvy8tl2qwol66pf9l520qam1" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                    <a href="https://play.google.com/store/movies/details/The_Featherweight?id=NEQbppHqCvI.P&hl=en_US" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a></strong>
+                </div>
+                <!--<div class="mb-4">
+					<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+				</div>-->
+                <button onclick="document.getElementById('aboutFeatherweight').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=BNguM2JaWYw&ab_channel=TheFeatherweight" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Family Therapy -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28585/FamilyTherapy-1080x1620.jpg" alt="Family Therapy" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutFamilyTherapy').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutFamilyTherapy" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Family Therapy</h4>
+                <p class="mb-4 text-xs">Young stranger disrupts seemingly perfect family's life, exposing their internal issues, fears, and dysfunctional relationships as external chaos invades their once idyllic existence.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Sonja Prosenc</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Marko Mandic, Aliocha Schneider, Katarina Stegnar</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/family-therapy/umc.cmc.31uyz83t6o7widcouplvenr2r" target="_blank" style="text-decoration: underline">Apple TV</a>
+                  <a href="https://www.amazon.com/gp/video/detail/B0DTXNH25H/ref=atv_sr_fle_c_sr4e8ffb_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0DTXM2NBB&qid=1760582628240" target="_blank" style="text-decoration: underline">Amazon</a>
+                  <a href="https://www.kanopy.com/en/product/15268546" target="_blank" style="text-decoration: underline">Kanopy</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Family-Therapy/4006765" target="_blank" style="text-decoration: underline">Fandango at Home</a>
+                </div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutFamilyTherapy').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=2daAcgPNA38&ab_channel=TheFilmStage" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- The Graduates -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28586/TheGraduates-1080x1620.jpg" alt="The Graduates" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutGraduates').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutGraduates" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">The Graduates</h4>
+                <p class="mb-4 text-xs">A year after her boyfriend dies from gun violence, a young woman prepares to graduate high school as she navigates an uncertain future alongside a community that is searching for ways to heal.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Hannah Peterson</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Jenessa Sheffield, Musa Aden, Nicholas Anderson</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/the-graduates/umc.cmc.1ajmn5n5px27mbttrw0jpn0un" target="_blank" style="text-decoration: underline">Apple TV</a>
+                  <a href="https://www.amazon.com/gp/video/detail/B0DR3YTX8N/ref=atv_sr_fle_c_sr4e8ffb_2_1_2?sr=1-2&pageTypeIdSource=ASIN&pageTypeId=B0DR3Z17C8&qid=1760582643658" target="_blank" style="text-decoration: underline">Amazon</a>
+                  <a href="https://www.kanopy.com/en/product/15111563" target="_blank" style="text-decoration: underline">Kanopy</a>
+                  <a href="https://athome.fandango.com/content/browse/details/The-Graduates/3928530" target="_blank" style="text-decoration: underline">Fandango at Home</a>
+                </div>
+                <!--<div class="mb-4">
+					<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+				</div>-->
+                <button onclick="document.getElementById('aboutGraduates').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.youtube.com/watch?v=ttYOMMFdC48&ab_channel=TheFutureofFilmisFemale" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Smoking Tigers -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28587/SmokingTigers-1080x1620.jpg" alt="Smoking Tigers" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutSmokingTigers').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutSmokingTigers" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Smoking Tigers</h4>
+                <p class="mb-4 text-xs">Over one summer spent at an elite academic bootcamp, a lonely Korean American teenager hides her true identity to fit in with her new friends, only to discover the bittersweet pains of adulthood.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: So Young Shelly Yo</p>
+                <p class="mb-4 text-xs">Ji-young Yoo, Jung Joon Ho, Abin Andrews, Erin Choi, Erin Yoo, Phinehas Yoon</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.hbomax.com/movies/smoking-tigers/1072aa0c-bd51-488f-a370-8cc07aa5e24f?utm_source=universal_search" target="_blank" style="text-decoration: underline;">HBO Max</a>
+                  <a href="https://www.amazon.com/gp/video/detail/B0F4Y8KW6X/ref=atv_sr_fle_c_sr4e8ffb_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0F4Y78VN6&qid=1760582652327" target="_blank" style="text-decoration: underline;">Amazon</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Smoking-Tigers/4190299" target="_blank" style="text-decoration: underline;">Fandango at Home</a>
+                  <a href="https://tv.apple.com/us/movie/smoking-tigers/umc.cmc.61w1rm4nl2r02ca965n0zpn0t" target="_blank" style="text-decoration: underline;">Apple TV</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutSmokingTigers').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/0GWR2SR0N25CTCRM1N2LE2MXQW/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a>
+              </div>
+            </div>
+          </div>
+          <!-- Suze -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28566/Suze-poster1080x1620.jpg" alt="Suze" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutSuze').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutSuze" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Suze</h4>
+                <p class="mb-4 text-xs">When her only daughter goes off to university, an empty-nest mother gets stuck taking care of her daughter's heartbroken ex-boyfriend, whom she can't stand.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Dane Clark, Linsey Stewart</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Michaela Watkins, Sara Waisglass, Charlie Gillespie</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/suze/umc.cmc.3lbs6xq8d1iqh5zuo9jxb8gqy" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://www.amazon.com/gp/video/detail/B0DRSCXC2Y/ref=atv_sr_fle_c_sr4e8ffb_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0DRS5BR1W&qid=1760582660388" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Suze/3928540" target="_blank" style="text-decoration: underline;">Fandango at Home</a>
+                  <a href="https://play.google.com/store/movies/details/Suze?id=rKCxOUWrTBc.P&hl=en_US&pli=1" target="_blank" style="text-decoration: underline;">Google Play</a>
+                </div>
+                <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+                <button onclick="document.getElementById('aboutSuze').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.primevideo.com/detail/0L3GPSY1SHEV2CKEJP8FQENT82/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Wild Goat Surf -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28588/WildGoatSurf-1080x1620.png" alt="Wild Goat Surf " />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutWildGoat').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutWildGoat" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Wild Goat Surf</h4>
+                <p class="mb-4 text-xs">Set in a rundown Okanagan RV park during the summer of 2003, Goat, a surfing-obsessed, twelve-year-old skater girl, navigates the unbridled, unstructured, summer days of youth, dreaming about becoming a surfer.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Caitlyn Sponheimer</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Shayelin Martin Leandro Guedes Caitlyn Sponheimer</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://www.amazon.com/gp/video/detail/B0F2GXDV7J/ref=atv_sr_fle_c_sr4e8ffb_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0F2GYZMHK&qid=1747749787984" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Wild-Goat-Surf/4123635" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                  <a href="https://tv.apple.com/us/movie/wild-goat-surf/umc.cmc.3h6jh3acm0e8u67aoo2pc4orr" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details/Wild_Goat_Surf?id=jjwCy1AY2J4.P&hl=en_US" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a>
+                </div>
+                <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+                <button onclick="document.getElementById('aboutWildGoat').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.primevideo.com/detail/0O7P8OQTEVPQBZ1FI04MMGI464/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Stealing Pulp Fiction -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29000/StealingPulpFiction-1080x1620.jpg" alt="Stealing Pulp Fiction" />
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutPulpFiction').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutPulpFiction" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Stealing Pulp Fiction</h4>
+                <p class="mb-4 text-xs">A group of enterprising wannabes and their eccentric therapist concoct a plot to steal Quentin Tarantino’s personal 35mm print of his famous 1994 film from his movie theater, which quickly spirals into a chaotic misadventure filled with unexpected twists and mishaps. </p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Danny Turkiewicz</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Jon Rudnitsky, Karan Soni, Cazzie David, Jason Alexander, Taylor Hill, Oliver Cooper</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on
+                  <a href="https://tv.apple.com/us/movie/stealing-pulp-fiction/umc.cmc.4vj9uxhbie5q99ji4ofj4hipl" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                  <a href="https://www.amazon.com/Stealing-Pulp-Fiction-Danny-Turkiewicz/dp/B0DPLPYPJ3" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                  <a href="https://athome.fandango.com/content/browse/details/Stealing-Pulp-Fiction/4190327" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                  <a href="https://play.google.com/store/movies/details?id=J8KQUq6-B08.P&pli=1" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a>
+                  <a href="https://www.youtube.com/watch?v=01klWn-mShM" target="_blank" style="text-decoration: underline; color: #fcfbf8;">YouTube</a></strong>
+              </div>
+              <button onclick="document.getElementById('aboutPulpFiction').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+            <div class="text-center text-triwhite text-xs pt-4">
+              <button onclick="document.getElementById('PulpFictionTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                Watch Trailer
+              </button>
+            </div>
+            <dialog id="PulpFictionTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/LgdXpx9I6sc?si=CG5GtCqCA_Iy-1mn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button onclick="document.getElementById('PulpFictionTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+          </div>
+        </div>
+        <!-- we can be heroes -->
+        <div class="">
+          <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/29206/WeCanBeHeroes-1080x1620.jpg" alt="We Can Be Heroes" />
+          <div class="flex flex-row justify-center gap-8">
+            <div class="text-center text-triwhite text-xs pt-4">
+              <button onclick="document.getElementById('aboutWeCanBeHeroes').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                About the Film
+              </button>
+            </div>
+            <dialog id="aboutWeCanBeHeroes" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+              <h4 class="mb-4">We Can Be Heroes</h4>
+              <p class="mb-4 text-xs">Sometimes, finding your tribe requires a bit of magic. For attendees of a live action role-playing (LARP) camp in upstate New York, the accepting environment gives neurodivergent, queer, and self-proclaimed "nerdy" teens the space for true self-discovery. As the campers immerse themselves in an imaginative world, they discover inner strength and emerge as heroes.</p>
+              <p class="mb-4 text-xs"><strong>Director</strong>: Alex Simmons &amp; Carina Mia Wong</p>
+              <!--<p class="mb-4 text-xs"><strong>Cast</strong>: </p>-->
+              <div class="text-triwhite text-xs mb-4">Watch Now on
+                <a href="https://www.amazon.com/Can-Heroes-Carina-Mia-Wong/dp/B0F9KYV7TV/" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Amazon</a>
+                <a href="https://tv.apple.com/us/movie/we-can-be-heroes/umc.cmc.31ae9qb655h89b1ocmd7m7iwz" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Apple TV</a>
+                <a href="https://athome.fandango.com/content/browse/details/We-Can-Be-Heroes/4300094" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Fandango at Home</a>
+                <a href="https://play.google.com/store/movies/details/We_Can_Be_Heroes?id=ibGSaPmJHqA.P&hl=en_US" target="_blank" style="text-decoration: underline; color: #fcfbf8;">Google Play</a>.
+              </div>
+              <!--<div class="mb-4">
+				<img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+			</div>-->
+              <button onclick="document.getElementById('aboutWeCanBeHeroes').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+            <div class="text-center text-triwhite text-xs pt-4">
+              <button onclick="document.getElementById('WeCanBeHeroesTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                Watch Trailer
+              </button>
+            </div>
+            <dialog id="WeCanBeHeroesTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mOECS8CoTSo?si=8HxnIHqXRfMROEFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button onclick="document.getElementById('WeCanBeHeroesTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+            </dialog>
+          </div>
+        </div>
+      </div>
+      <!-- older titles -->
+      <section class="bg-[#FBFCF8] text-triblack py-8">
+        <div class="container-content">
+          <div class="text-center">
+            <h3 class="mb-1">Previous Releases</h3>
+          </div>
+        </div>
+      </section>
+      <div class="grid lg:grid-cols-4 gap-12 bg-triblack px-8 py-8">
+        <% previous_films.each do |film| %>
+          <!-- Films -->
+          <div class="">
+            <img src="<%= film[:img] %>" alt="<%= film[:title] %>" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('<%= film[:title].parameterize %>').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="<%= film[:title].parameterize %>" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4"><%= film[:title] %></h4>
+                <p class="mb-4 text-xs"><%= film[:desc] %></p>
+                <p class="mb-4 text-xs"><%= film[:director].html_safe %></p>
+                <% if film[:cast].present? %>
+                  <p class="mb-4 text-xs"><strong>Cast</strong>: <%= film[:cast] %></p>
+                <% end %>
+                <div class="text-triwhite text-xs mb-4"><%= film[:links_title] %> <br/>
+                  <% film[:links].each_with_index do |link, i| %>
+                    <a href="<%= link.second %>" target="_blank" style="text-decoration: underline;"><%= link.first %></a>
+                  <% end %>
+                  <br/>
+                  <button onclick="document.getElementById('<%= film[:title].parameterize %>').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+                </dialog>
+                <% if film[:trailer].present? %>
+                  <div class="text-center text-triwhite text-xs pt-4">
+                    <a class="btn btn-primary" href="<%= film[:trailer] %>" target="_blank" style="color: #151515; background-color: #FBFCF8;">
+                      Watch Trailer
+                    </a>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+          <!-- Good Girl Jane -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28567/GoodGirlJane-poster1080x1620.jpg" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutGoodGirlJane').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutGoodGirlJane" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Good Girl Jane</h4>
+                <p class="mb-4 text-xs">Desperate for connection, lonely young Jane meets a group of teen misfits who offer her acceptance and camaraderie. She falls hard for their playful but domineering ringleader, Jamie, and becomes entangled in his amateur drug operation. As her life spirals violently out of control, Jane must choose between Jamie and her own survival.<br />
+                  Best U.S. Narrative Feature, Founders Award 2022 Tribeca Festival<br />
+                  Rain Spencer, Best Performance in a U.S. Narrative Feature 2022 Tribeca Festival</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Sarah Elizabeth Mintz</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Rain Spencer, Andie MacDowell, Odessa A'zion, Patrick Gibson</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.amazon.com/Good-Girl-Sarah-Elizabeth-Mintz/dp/B0DCZY3RGK" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/good-girl-jane/umc.cmc.4r8vs6jk68g6whrjn3i6s1b04" target="_blank" style="text-decoration: underline;">Apple TV</a> <a href="https://play.google.com/store/movies/details?id=9jSYlLJy54k.P" target="_blank" style="text-decoration: underline;">Google Play</a> <a href="https://www.kanopy.com/en/product/good-girl-jane?frontend=kui" target="_blank" style="text-decoration: underline;">Kanopy</a> <a href="https://kinema.com/films/good-girl-jane-felh6" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutGoodGirlJane').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('bornHungryTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="bornHungryTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eByzQPa4x2Y?si=2x5TgvdphXQ4ETZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('bornHungryTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+            </div>
+          </div>
+          <!-- In Her Name -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28569/InHerName-poster1080x1620.jpg" alt="In Her Name" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutInHerName').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutInHerName" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">In Her Name</h4>
+                <p class="mb-4 text-xs">An art house dramedy, about estranged sisters bonding as thirty-somethings forced to confront reality. While dealing with their egomaniacal formerly-important artist father’s descent they experience a somewhat psychedelic liberation from the pain of their past and find themselves in a vortex of awareness of what matters most. Love.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Sarah Carter</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Erin Hammond, Sarah Carter, Ciera Danielle, Nyambi Nyambi</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.975b44c2-469a-41ca-a77e-3354c37d77b2?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a> <a href="https://tv.apple.com/us/movie/in-her-name/umc.cmc.47jxnp4fsililvzvuah7nqqq8?action=play" target="_blank" style="text-decoration: underline;">Apple TV</a> <a href="https://play.google.com/store/movies/details?id=Kcb5StA2uyA.P" target="_blank" style="text-decoration: underline;">Google Play</a> <a href="https://www.kanopy.com/en/product/14543971" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/in-her-name-zcosdc" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutInHerName').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('inHerNameTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="inHerNameTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cD55WyCzrvg?si=R6JVa0AOhOQ7Pc-W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('inHerNameTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/0FKX9J8S2SVCJ4GABSYU5AMGT4/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- Little Boxes -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28593/LittleBoxes-1080x1620.jpg" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutLittleBoxes').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutLittleBoxes" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Little Boxes</h4>
+                <p class="mb-4 text-xs">An interracial family struggles to adjust when they move from New York City to a small, predominately white town in Washington State.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Rob Meyer</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Melanie Lynsky, Armani Jackson, Nelsan Ellis</p>
+                <div class="text-triwhite text-xs py-2">Watch Now on <a href="https://www.primevideo.com/detail/Little-Boxes/0KIV76OLMR9DZBO2KSTCYDSFJU" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/little-boxes/umc.cmc.5hdvvrmeva0mca8g7e5dpbfxy?action=play" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=gwxG19vk_9U.P" target="_blank" style="text-decoration: underline;">Google Play</a> <a href="https://www.kanopy.com/en/product/14868379" target="_blank" style="text-decoration: underline;">Kanopy</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutLittleBoxes').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('littleBoxesTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="littleBoxesTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8siyuhQZEBE?si=dQ1SLjjwDabBP0lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('littleBoxesTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/0FKX9J8S2SVCJ4GABSYU5AMGT4/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- Mary Heilmann -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28573/MaryHeilmann-poster1080x1620.jpg" alt="Mary Heilmann: Waves, Roads & Hallucinations" />
+            <!-- the Buttons NO YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutMary').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutMary" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Mary Heilmann: Waves, Roads, Hallucinations</h4>
+                <p class="mb-4 text-xs">New York based artist Mary Heilmann is one of the most influential American abstract painters of her time. Heilmann's work has been exhibited throughout the world in museums such as The Whitney, Dia Beacon, and MoMA. This documentary offers a visually immersive journey through her life, using rare archival material and in-studio footage to explore the artist’s mind and practice.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Matt Creed</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Mary Heilmann</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.072f81b2-afc1-47d1-983f-83d0f345dc98?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/mary-heilmann-waves-roads--hallucinations/umc.cmc.5qp0jgaamct9e4tcwkt8mk0sg" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=L12GISagrNI.P" target="_blank" style="text-decoration: underline;">Google Play</a>
+                  <a href="https://www.kanopy.com/en/category/80757" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/mary-heilmann-waves-roads-and-hallucinations-h19oc" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <button onclick="document.getElementById('aboutMary').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/0FKX9J8S2SVCJ4GABSYU5AMGT4/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <!-- Nude Tuesday -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28568/NudeTuesday-poster1080x1620.jpg" alt="Nude Tuesday" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutNudeTuesday').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutNudeTuesday" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Nude Tuesday</h4>
+                <p class="mb-4 text-xs">In an effort to rekindle the spark in their troubled marriage, Laura and Bruno head to a couples’ retreat run by relationship and sexual healing guru, Bjorg Rasmussen. Plagued by miscommunication, Nude Tuesday is an utterly singular excursion into naturism and self-discovery.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Armağan Ballantyne</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Jackie van Beek, Damon Herriman, Jemaine Clement</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.46ea9b3b-3b6b-4e72-bdd5-fea5365a2c3f?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/nude-tuesday/umc.cmc.26z8vp6p3ujt4lw6a821eft3t" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=QU5JaPNSZGA.P" target="_blank" style="text-decoration: underline;">Google Play</a> <a href="https://www.kanopy.com/en/product/14736282" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/nude-tuesday-gpsll7" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutNudeTuesday').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('nudeTuesdayTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="nudeTuesdayTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_HP0rBK_T0Q?si=W0rDRd-vN7m1nciK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('nudeTuesdayTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://youtu.be/TtS-dFwpB6w?si=YISf6UQT-b_PWIfl" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- phatom Parrot -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28574/PhantomParrot-poster1080x1620.jpg" alt="Phantom Parrot" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutPhantomParrot').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutPhantomParrot" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Phantom Parrot</h4>
+                <p class="mb-4 text-xs">When human rights activist Muhammad Rabbani refuses to hand over the passwords to his electronic devices and is prosecuted, a journalist following the case uncovers the existence of top-secret surveillance program, Phantom Parrot. This disturbing discovery brings up questions of modern espionage and digital privacy in this unsettling film about a man with the courage to speak out.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Kate Stonehill</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Muhammad Rabbani</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.41909568-f52e-4a9e-a47e-c402a26e679c?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/phantom-parrot/umc.cmc.5mxa9d7zdbvsxu6d5t0ou7rzx?action=play" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=LAHVSKG-CfE.P" target="_blank" style="text-decoration: underline;">Google Play</a>
+                  <a href="https://www.kanopy.com/en/product/14929587" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/phantom-parrot-gwagu3" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <button onclick="document.getElementById('aboutPhantomParrot').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('phantomParrotTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="phantomParrotTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dGSlpPepEC0?si=IfgGDyS3HjS5b5YB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('phantomParrotTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://youtu.be/TtS-dFwpB6w?si=YISf6UQT-b_PWIfl" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- President in Waiting -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28571/PresidentInWaiting-poster1080x1620.jpg" alt="President in Waiting" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutPresident').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutPresident" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">President in Waiting</h4>
+                <p class="mb-4 text-xs">Through exclusive interviews with our nation's former leaders, discover how the Vice Presidency went from being a ceremonial office to one of the most powerful positions in politics. Originally presented by CNN Films, this unique documentary features interviews with Presidents Obama, Bush, Clinton, Carter &amp; Vice Presidents Pence, Biden, Cheney, Gore, Quayle, and Mondale.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Jeffrey Roth</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Joe Biden, Barack Obama, George W. Bush, Dick Cheney, Al Gore</p>
+                <div class="text-center text-triwhite text-xs py-2">Watch Now on <a href="https://www.primevideo.com/detail/President-in-Waiting/0S8ZCEW6F77WV6424SQA89QU42" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/president-in-waiting/umc.cmc.21l45di6tf7l9p4hveyibuykp" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details/President_in_Waiting?id=Gf8kJlQs_EE.P&hl=en_US" target="_blank" style="text-decoration: underline;">Google Play</a>
+                  <a href="https://www.kanopy.com/en/product/14629816" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/president-in-waiting-41lw8u" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <button onclick="document.getElementById('aboutPresident').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('presidentWaitingTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="presidentWaitingTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hb1ALFL2bkQ?si=o6yIDDYiPliuHab6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('presidentWaitingTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://youtu.be/TtS-dFwpB6w?si=YISf6UQT-b_PWIfl" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- The Right to Read -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28591/RightToRead-1080x1620.jpg" alt="The Right to Read" />
+            <!-- the Buttons YouTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutRight').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutRight" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">The Right to Read</h4>
+                <p class="mb-4 text-xs">In this documentary, NAACP activist Kareem Weaver sets out to reform the low reading scores in his home of Oakland, California. Featuring stories from Weaver's own life, a teacher and two American families, The Right to Read dives into the fight to provide our youngest generation with the most foundational skill for life-long success: the ability to read.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Jenny Mackenzie</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Kareem Weaver</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.f59f15ad-f16a-4573-96de-baa17430a6df?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/the-right-to-read/umc.cmc.3r3ssazkjgvpuebu7afnpdety?action=play" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=06WBjFi3_Os.P" target="_blank" style="text-decoration: underline;">Google Play</a>
+                  <a href="https://www.kanopy.com/en/product/right-read?frontend=kui" target="_blank" style="text-decoration: underline;">Kanopy</a></div>
+                <button onclick="document.getElementById('aboutRight').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('rightToReadTrailer').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  Watch Trailer
+                </button>
+              </div>
+              <dialog id="rightToReadTrailer" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TtS-dFwpB6w?si=Ya4c8dFLXUyXosWl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button onclick="document.getElementById('rightToReadTrailer').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <!--<div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://youtu.be/TtS-dFwpB6w?si=YISf6UQT-b_PWIfl" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>-->
+            </div>
+          </div>
+          <!-- Roving Woman -->
+          <div class="">
+            <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28575/RovingWoman-poster1080x1620-rev.jpg" alt="Roving Woman" />
+            <!-- the buttons NO youTube embed -->
+            <div class="flex flex-row justify-center gap-8">
+              <div class="text-center text-triwhite text-xs pt-4">
+                <button onclick="document.getElementById('aboutRoving').showModal()" class="text-center text-triblack text-xs pt-4 btn btn-primary" style="color: #151515; background-color: #FBFCF8;">
+                  About the Film
+                </button>
+              </div>
+              <dialog id="aboutRoving" class="backdrop:bg-black/50 p-6 rounded-lg max-w-sm md:max-w-lg text-triwhite bg-triblack border-solid-[#FBFCF8]">
+                <h4 class="mb-4">Roving Woman</h4>
+                <p class="mb-4 text-xs">A break-up leaves Sarah reeling and directionless, standing alone on her ex's doorstep in a ballgown. Following her impulses, she starts to drive through the desert and makes unexpected connections along the way.</p>
+                <p class="mb-4 text-xs"><strong>Director</strong>: Michal Chmielewski</p>
+                <p class="mb-4 text-xs"><strong>Cast</strong>: Lena Góra, John Hawkes</p>
+                <div class="text-triwhite text-xs mb-4">Watch Now on <a href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.7bc11314-e583-46f6-9c54-b94327427b01?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" style="text-decoration: underline;">Amazon Prime</a>
+                  <a href="https://tv.apple.com/us/movie/roving-woman/umc.cmc.w57ioup74dftqd46jzsrtqkz?action=play" target="_blank" style="text-decoration: underline;">Apple TV</a>
+                  <a href="https://play.google.com/store/movies/details?id=Kl7T2krpT6E.P" target="_blank" style="text-decoration: underline;">Gooly Play</a>
+                  <a href="https://www.kanopy.com/en/product/14780327" target="_blank" style="text-decoration: underline;">Kanopy</a>
+                  <a href="https://kinema.com/films/roving-woman-618dy1" target="_blank" style="text-decoration: underline;">Kinema</a></div>
+                <div class="mb-4">
+                  <img src="https://d13jj08vfqimqg.cloudfront.net/uploads/image/gallery_image/28355/TF_Logo_Registered-150px.png">
+                </div>
+                <button onclick="document.getElementById('aboutRoving').close()" class="mt-2 bg-[#FCFBF8] text-triblack font-medium px-4 py-2 rounded">Close</button>
+              </dialog>
+              <div class="text-center text-triwhite text-xs pt-4"><a class="btn btn-primary" href="https://www.amazon.com/gp/video/detail/0MHD5CATS10ON4Z8Y65U7HFPC1/ref=atv_dp_watch_trailer?autoplay=trailer" target="_blank" style="color: #151515; background-color: #FBFCF8;">Watch Trailer</a></div>
+            </div>
+          </div>
+          <article class="py-16 bg-[#FBFCF8] text-triblack">
+            <p style="margin: auto; width: 60%;" class="my-8">Signup below for upcoming announcements from Tribeca Films</p>
+            <div style="margin: auto; width: 50%; border: 1px solid #ffffff; padding: 20px;">
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                				region: "na1",
+                				portalId: "21550867",
+                				formId: "91855c04-a481-40aa-ab2f-3ee9d7bc319b"
+                });
+              </script>
+            </div>
+          </article>
+        </main>
+        <!--
+<section class="container mx-auto grid lg:grid-cols-3 gap-10 mb-8 px-6 lg:px-0">
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/tribecax">
+        <img class="w-full mb-4" alt="Submissions Now Open: Tribeca X Awards" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/797/medium_TribecaXAwards-homeDesktop.jpg">
+        <h4>Submissions Now Open: Tribeca X Awards</h4>
+</a>      <span class="grow">Elevate your brand story by submitting to the Tribeca X Awards, where Tribeca honors the year's best brand and creator/filmmaker collaborations of the year across multiple categories.</span>
+      <a class="text-xs flex items-center" href="/tribecax">
+        Learn more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/news/more-tribeca-highlights-now-streaming-and-in-theaters">
+        <img class="w-full mb-4" alt="More Tribeca Highlights Now Streaming and In Theaters" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/758/medium_BRATS-Clean-16x9-01.png">
+        <h4>More Tribeca Highlights Now Streaming and In Theaters</h4>
+</a>      <span class="grow">Catch Tribeca Festival highlights including Daddio, Skywalkers, Diane von Furstenberg: Woman in Charge, Federer: Twelve Final Days, Despicable Me 4, and more.</span>
+      <a class="text-xs flex items-center" href="/news/more-tribeca-highlights-now-streaming-and-in-theaters">
+        Read more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/news/heres-what-you-missed-at-the-2024-uninterrupted-festival">
+        <img class="w-full mb-4" alt="Here's What You Missed at Uninterrupted" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/759/medium_UNFF-Recap-Renee-1920x1080.jpg">
+        <h4>Here's What You Missed at Uninterrupted</h4>
+</a>      <span class="grow">Star athletes like Paul George, Renee Montgomery, and Pete Rose came together to celebrate the best in sports stories.</span>
+      <a class="text-xs flex items-center" href="/news/heres-what-you-missed-at-the-2024-uninterrupted-festival">
+        Read more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/news/announcing-the-2024-audience-award-winners">
+        <img class="w-full mb-4" alt="Celebrating Your Festival Favorites" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/757/medium_BAD_SHABBOS-Clean-16x9-01.png">
+        <h4>Celebrating Your Festival Favorites</h4>
+</a>      <span class="grow">Fan Favorites from the Festival that YOU voted on at the 2024 Tribeca Festival</span>
+      <a class="text-xs flex items-center" href="/news/announcing-the-2024-audience-award-winners">
+        Read more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/news/announcing-the-2024-tribeca-festival-competition-winners">
+        <img class="w-full mb-4" alt="Announcing the 2024 Tribeca Festival Competition Winners" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/754/medium_GRIFFIN_IN_SUMMER-Clean-16x9-01.png">
+        <h4>Announcing the 2024 Tribeca Festival Competition Winners</h4>
+</a>      <span class="grow">Celebrating the best of the diverse, trailblazing works and their creators from this year’s festival</span>
+      <a class="text-xs flex items-center" href="/news/announcing-the-2024-tribeca-festival-competition-winners">
+        Read more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/tribecafilms">
+        <img class="w-full mb-4" alt="Tribeca Films Supporting the Distribution of Independent Films" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/635/medium_GOODGIRLJANE_SANER_JAKE_1-1920x1080.png">
+        <h4>Tribeca Films Supporting the Distribution of Independent Films</h4>
+</a>      <span class="grow">Tribeca Enterprises and Giant Pictures today announced Tribeca Films, a distribution label aimed to support independent films from the festival circuit by providing high-quality films the opportunity to distribute across streaming platforms and generate revenue for filmmakers.</span>
+      <a class="text-xs flex items-center" href="/tribecafilms">
+        Learn more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+    <article class="flex flex-col border-b border-b-triblack gap-4 pb-8">
+      <a class="block hover:no-underline" href="/news/celebrating-tribeca-alumni-this-emmy-awards-season">
+        <img class="w-full mb-4" alt="Celebrating Tribeca Alumni This Emmy Awards Season" width="400" height="225" src="https://d13jj08vfqimqg.cloudfront.net/uploads/link_item/image/761/medium_FX_s_THE_BEAR__FX__1_16X9.jpg">
+        <h4>Celebrating Tribeca Alumni This Emmy Awards Season</h4>
+</a>      <span class="grow">Tribeca Stars Shine Bright with Emmy Nods for The Bear, Reservation Dogs, and More</span>
+      <a class="text-xs flex items-center" href="/news/celebrating-tribeca-alumni-this-emmy-awards-season">
+        Read more
+        <svg class="inline size-4 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24" version="1.1" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+</a>    </article>
+</section>-->
